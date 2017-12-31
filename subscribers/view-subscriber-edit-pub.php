@@ -23,7 +23,7 @@ function es_af_shortcode_edit() {
 	
 	$did = isset($_GET['did']) ? $_GET['did'] : '0';
 	
-	echo '<a href="' . CreateEditURL($did) . '">here</a>';
+	//echo '<a href="' . CreateEditURL($did) . '">here</a>';
 	
 	//check nonce
 	wp_verify_nonce( $_GET['nonce'], 'update-es-subscriber'.$did );
@@ -129,7 +129,7 @@ function es_af_shortcode_edit() {
 
 	<div class="wrap">
 		<h2>
-			<?php echo __( 'Edit Subscriber', ES_TDOMAIN ); ?>
+			<?php //echo __( 'Edit Subscriber', ES_TDOMAIN ); ?>
 		</h2>
 		<form name="form_addemail" method="post" action="#" onsubmit="return _es_addemail()">
 			<div class="tool-box">
@@ -155,25 +155,11 @@ function es_af_shortcode_edit() {
 								<input type="text" name="es_email_mail" id="es_email_mail" value="<?php echo $form['es_email_mail']; ?>" maxlength="225" size="30" />
 							</td>
 						</tr>
+						 
 						<tr>
 							<th scope="row">
 								<label for="tag-display-status">
-									<?php echo __( 'Update Status', ES_TDOMAIN ); ?>
-								</label>
-							</th>
-							<td>
-								<select name="es_email_status" id="es_email_status">
-									<option value='Confirmed' <?php if($form['es_email_status'] == 'Confirmed') { echo 'selected="selected"' ; } ?>><?php echo __( 'Confirmed', ES_TDOMAIN ); ?></option>
-									<option value='Unconfirmed' <?php if($form['es_email_status'] =='Unconfirmed') { echo 'selected="selected"' ; } ?>><?php echo __( 'Unconfirmed', ES_TDOMAIN ); ?></option>
-									<option value='Unsubscribed' <?php if($form['es_email_status'] == 'Unsubscribed') { echo 'selected="selected"' ; } ?>><?php echo __( 'Unsubscribed', ES_TDOMAIN ); ?></option>
-									<option value='Single Opt In' <?php if($form['es_email_status'] == 'Single Opt In') { echo 'selected="selected"' ; } ?>><?php echo __( 'Single Opt In', ES_TDOMAIN ); ?></option>
-								</select>
-							</td>
-						</tr>
-						<tr>
-							<th scope="row">
-								<label for="tag-display-status">
-									<?php echo __( 'Group', ES_TDOMAIN ); ?>
+									<?php echo __( 'Categories subscribed', ES_TDOMAIN ); ?>
 								</label>
 							</th>
 							<td>

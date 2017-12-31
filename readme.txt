@@ -7,7 +7,7 @@ Plugin URL: https://wordpress.org/plugins/email-subscribers/
 Plugin Author URL: https://www.icegram.com/
 
 Fork Author: Craig Lambie
-Fork Author URL: craiglambie.com
+Fork Author URL: http://craig.lambie.net.au/2017/12/adding-edit-profile-button-icegram-email-subscriber-emails/
 Fork GitHub: https://github.com/cclambie/icegram-es-edit-shortcode/
 
 
